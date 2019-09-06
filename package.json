@@ -1,0 +1,24 @@
+{
+  "name": "poem-cli",
+  "version": "1.0.0",
+  "description": "命令行随机打印一句诗词。",
+  "main": "random-poem.js",
+  "bin": {
+    "poem-cli": "index.js"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "诗词",
+    "命令行",
+    "有趣"
+  ],
+  "author": "Orange",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "colors-cli": "^1.0.26",
+    "yargs": "^14.0.0"
+  }
+}
