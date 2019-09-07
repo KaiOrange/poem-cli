@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "命令行随机打印一句诗词。",
   "main": "random-poem.js",
+  "repository": "git@github.com:KaiOrange/poem-cli.git",
   "bin": {
     "poem-cli": "index.js"
   },

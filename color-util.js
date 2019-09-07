@@ -33,15 +33,14 @@ function getColorMethod(commandStr = ''){
     if (checkStyle(command[i])) {
       colorMethod = colorMethod[command[i]];
     } else {
-      console.error('参数错误（' + command[i] + '）！\n');
-      printSupportStyle();
-      throw new Error('参数错误（' + command[i] + '）！');
+      throw new Error('不支持的样式：' + command[i]);
     }
   }
   return colorMethod;
 }
 
 module.exports = {
+  color,
   printSupportStyle,
   checkStyle,
   getColorMethod
