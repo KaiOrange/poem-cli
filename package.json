@@ -2,13 +2,13 @@
   "name": "poem-cli",
   "version": "1.0.1",
   "description": "命令行随机打印一句诗词。",
-  "main": "random-poem.js",
+  "main": "./src/random-poem.js",
   "repository": "git@github.com:KaiOrange/poem-cli.git",
   "bin": {
-    "poem-cli": "index.js"
+    "poem-cli": "./src/index.js"
   },
   "scripts": {
-    "start": "node index"
+    "start": "node ./src/index"
   },
   "keywords": [
     "诗词",
@@ -17,9 +17,13 @@
   ],
   "author": "Orange",
   "license": "ISC",
+  "engines": {
+    "node": ">=6.0"
+  },
   "dependencies": {
     "axios": "^0.19.0",
     "colors-cli": "^1.0.26",
     "yargs": "^14.0.0"
-  }
+  },
+  "devDependencies": {}
 }

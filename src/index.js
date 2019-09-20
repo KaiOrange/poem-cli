@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+"use strict"
 const colorUtil = require('./color-util')
 const randomPoem = require('./random-poem')
 let argv = require('yargs')

@@ -1,5 +1,5 @@
+"use strict"
 const color = require('colors-cli/safe')
-
 const COLOR_TITLE = ['样式','前景色','背景色','前景色（明亮）','背景色（明亮）'];
 const COLOR_STYLE = ['bold', 'faint', 'italic', 'underline', 'blink', 'overline', 'inverse', 'conceal', 'strike'];
 const COLOR_FOREGROUND = ['black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'white'];
