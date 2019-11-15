@@ -1,10 +1,12 @@
 {
   "name": "poem-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "命令行随机打印一句诗词。",
   "main": "./src/random-poem.js",
   "repository": "https://github.com/KaiOrange/poem-cli",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "bin": {
     "poem-cli": "./src/index.js"
   },
