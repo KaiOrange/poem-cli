@@ -24,7 +24,7 @@
     "node": ">=6.0"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "colors-cli": "^1.0.27",
     "yargs": "^14.2.3"
   },
