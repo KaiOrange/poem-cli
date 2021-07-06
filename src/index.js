@@ -45,20 +45,19 @@ if (!!argv.s) {
   colorUtil.printSupportStyle();
 } else {
   randomPoem().then(function (data){
-    data = data.data;
-    let signature = data.origin.author + '《' + data.origin.title + '》';
+    let signature = data.author + '《' + data.origin + '》';
     let prefix =  '———— ';
     let paddingSpacing = '';
     let spacingLength = data.content.length * 2 - signature.length * 2 - prefix.length;
     if (spacingLength > 0) {
-      if (data.origin.title.indexOf('·') !== -1) {
+      if (data.origin.indexOf('·') !== -1) {
         spacingLength++;
       }
       paddingSpacing = new Array(spacingLength).fill(' ').join('');
     }
     try {
       // 添加颜色
-      signature = colorUtil.getColorMethod(argv.as)(data.origin.author) + '《' + colorUtil.getColorMethod(argv.os)(data.origin.title) + '》';
+      signature = colorUtil.getColorMethod(argv.as)(data.author) + '《' + colorUtil.getColorMethod(argv.os)(data.origin) + '》';
       signature = (paddingSpacing + prefix) + signature
       console.log();
       console.log(colorUtil.getColorMethod(argv.ps)(data.content));
